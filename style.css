@@ -57,9 +57,40 @@ header {
 
 #exemplo_display_block p{
     display: block;
-    
 }
 
 #exemplo_display_inline p{
     display: inline;
+}
+
+#exemplo_display_inline_block p{
+ display: inline block ;
+}
+
+#exemplo_display_flex{
+display: flex;
+}
+
+#exemplo_display_inline-flex{
+display: inline-flex;
+}
+
+#exemplo_display_grid{
+display: grid;
+}
+
+#exemplo_display_inline-grid{
+display: inline-grid;
+}
+
+#exemplo_display_flow-root{
+ display: flow-root;
+}
+
+#exemplo_display_table{
+ display: table;
+}
+
+#exemplo_display_block_flow{
+ display: block flow ;
 }
