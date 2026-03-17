@@ -40,7 +40,8 @@
         </div>
 
         <div class="conceito">
-            <h3> Valores display: Inline </h3>
+            <h3> Valores display: <h2>Inline</h2>
+            </h3>
             <p>
                 Apresenta o elemento como conteúdo corrido, <br>
                 inserido organicamente junto ao texto ou outros elementos, <br>
@@ -53,7 +54,8 @@
         </div>
 
         <div class="conceito">
-            <h3> Valores display: Block </h3>
+            <h3> Valores display: <h2>Block</h2>
+            </h3>
             <p>
                 Apresenta o elemento como um bloco, inserido separadamente do conteúdo <br>
                 e ocupado (até que se altere) 100% do espaço disponível na tela.
@@ -64,7 +66,8 @@
         </div>
 
         <div class="conceito">
-            <h3> Valores display: Inline-Block </h3>
+            <h3> Valores display: <h2>Inline-Block</h2>
+            </h3>
             <p>
                 Apresenta o elemento como conteúdo corrido, inserido organicamente <br>
                 junto ao texto ou outros elementos, mas permite que propriedades como <br>
@@ -75,7 +78,8 @@
         </div>
 
         <div class="conceito">
-            <h3> Valores display: Grid </h3>
+            <h3> Valores display: <h2>Grid</h2>
+            </h3>
             <p>
                 Apresenta o elemento como um contêiner de grid, <br>
                 tipologia disponível apenas no HTML5 e em alguns navegadores.
@@ -85,16 +89,96 @@
         </div>
 
         <div class="conceito">
-            <h3> Valores display: Grid </h3>
+            <h3> Valores display: <h2>Flex</h2>
+            </h3>
             <p>
                 Define o elemento como um contêiner flexível, <br> facilitando o alinhamento de itens filhos.
 
             </p>
         </div>
 
-    <div class="hr">
-        <hr>
-    </div>
+        <div class="hr">
+            <hr>
+        </div>
+
+        <div class="conceito_position">
+            <h3> Valores position: <h2>Static</h2>
+            </h3>
+            <p>
+                O valor padrão de position é static, que mantém o elemento <br>
+                no fluxo normal da página e não permite usar top, right, bottom ou <br>
+                left para posicionamento. Outros valores, como relative e fixed, permitem alterar a posição do elemento.
+
+            </p>
+        </div>
+
+        <div class="conceito_position">
+            <h3> Valores position: <h2>Relative</h2>
+            </h3>
+            <p>
+                O valor relative significa "relativo". Um elemento <br>
+                com "position: relative" também é posicionado de acordo com o fluxo <br>
+                normal da página, mas agora podemos usar as propriedades top, right, bottom e left para <br>
+                ajustar sua posição relativa à sua posição original.
+                Exemplo:
+                .elemento
+
+                <br>
+            <h4>Exemplo -> position: relative; <br>
+                top: 10px; /* Move o elemento 10 pixels para baixo */ <br>
+                left: 20px; /* Move o elemento 20 pixels para a direita */
+            </h4>
+
+
+            </p>
+        </div>
+
+        <div class="conceito_position">
+            <h3> Valores position: <h2>Absolute</h2>
+            </h3>
+            <p>
+                O absolute position é a ferramenta que remove o elemento do fluxo normal, <br>
+                não afeta e também não é afetada pela posição dos outros elementos. <br>
+                Diferente dos outros elementos no body, você pode posicionar qualquer elemento absoluto <br>
+                dentro de um elemento se o mesmo estiver definido como algo diferente de static (O elemento que é
+                posicionado conforme <br>
+                o fluxo normal do html). Para definir o posicionameto é possível utilizar top left, right e bottom.
+
+
+            </p>
+        </div>
+
+        <div class="conceito_position">
+            <h3> Valores position: <h2>Fixed</h2>
+            </h3>
+            <p>
+                O fixed position é, de maneira simples, elementos posicionados <br>
+                em relação a área de visualização ou a janela do navegador, ou seja, ao rolar <br>
+                a página para baixo, os elementos fixos permanecem fixos em suas posições. <br>
+                Essa configuração de posição é frequentemente usada para navegações fixas.
+                Vale salientar que, um elemento fixo se comporta de forma relativa ao fluxo do documento até atingir
+                <br>
+                uma posição de rolagem definida. Nesse ponto, ele passa a se comportar como um elemento fixo dentro de
+                seu elemento pai direto. <br>
+                Assim que o elemento fixo atinge a parte inferior do elemento pai, ele para de rolar.
+
+
+
+            </p>
+        </div>
+
+        <div class="conceito_position">
+            <h3> Valores position: <h2>Sticky</h2>
+            </h3>
+            <p>
+                Para falar do sticky position é preciso também falar do fixed e do relative, pois o sticky é a junção dos dois elementos, <br>
+                ele funciona como um fixed, fixa alguma imagem, 
+                texto ou elemento, porém, até um ponto em que o desenvolvedor usando o comando top: 0 estipula, <br>
+                 o que torna o elemento fixo até o final do contêiner, travando quando atinge o ponto definido.
+
+
+            </p>
+        </div>
 
     </main>
 </body>
