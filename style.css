@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: rgb(180, 167, 167);
+    background-color: rgb(88, 125, 228);
     text-align: center;
 }
 
@@ -35,10 +35,31 @@ header {
 
 }
 
+.Temas{
+    margin: 10px;
+    background-color:rgb(95, 86, 73);
+    color: white;
+    border: 5px solid white;
+    text-align: center;
+    border-radius: 10px
+}
+
+
 .hr{
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     height: 10px;
     margin: 10px;
-    border-radius: 10px;
-    border-color: black;
+}
+
+
+/*Temas - Parte das Garotas*/
+/*Deixei um de exemplo, não tenho certeza se esta certo... ass: rafa*/
+
+#exemplo_display_block p{
+    display: block;
+    
+}
+
+#exemplo_display_inline p{
+    display: inline;
 }

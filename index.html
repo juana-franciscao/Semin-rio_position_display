@@ -17,16 +17,10 @@
     <main>
         <div class="pesquisa">
             <div class="conceito">
-                <p>O position é uma propriedade CSS que define como um elemento deve ser
-                    posicionado<br>
-                    na página, ou seja, no corpo do documento o body. Essa propriedade possui quatro <br>propriedades
-                    que são top, bottom, right e left, respectivamente, topo, abaixo, direita e esquerda.<br>Que
-                    determinam a localização final do
-                    elemento,
-                    que irá se deslocar conforme especificado<br> na estilização.
-                    Além dessas propriedades, o position possui cinco tipos atribuídos a ele,<br> que determinam como o
-                    elemento
-                    será posicionado de acordo com a página. Que são: static, fixed, relative, absolute e sticky.
+                <p>No desenvolvimento web, o CSS é responsável por organizar e posicionar os elementos. As propriedades
+                    display e position são fundamentais: a primeira define como os elementos aparecem no layout,
+                    enquanto a segunda controla sua posição na página. Este trabalho busca explicar essas propriedades e
+                    seu funcionamento na prática em HTML.
                 </p>
             </div>
 
@@ -153,8 +147,8 @@
             </h3>
             <p>
                 O fixed position é, de maneira simples, elementos posicionados
-                em relação a área de visualização <br> ou a janela do navegador, ou seja, ao rolar 
-                a página para baixo, os elementos fixos permanecem  <br>fixos em suas posições. 
+                em relação a área de visualização <br> ou a janela do navegador, ou seja, ao rolar
+                a página para baixo, os elementos fixos permanecem <br>fixos em suas posições.
                 Essa configuração de posição é frequentemente usada para navegações fixas. <br>
                 Vale salientar que, um elemento fixo se comporta de forma relativa ao fluxo do documento até atingir
                 <br>
@@ -171,10 +165,11 @@
             <h3> Valores position: <h2>Sticky</h2>
             </h3>
             <p>
-                Para falar do sticky position é preciso também falar do fixed e do relative, pois o sticky é a junção dos dois elementos, <br>
-                ele funciona como um fixed, fixa alguma imagem, 
+                Para falar do sticky position é preciso também falar do fixed e do relative, pois o sticky é a junção
+                dos dois elementos, <br>
+                ele funciona como um fixed, fixa alguma imagem,
                 texto ou elemento, porém, até um ponto em que o desenvolvedor usando o comando top: 0 estipula, <br>
-                 o que torna o elemento fixo até o final do contêiner, travando quando atinge o ponto definido.
+                o que torna o elemento fixo até o final do contêiner, travando quando atinge o ponto definido.
 
 
             </p>
@@ -183,7 +178,119 @@
         <div class="hr"></div>
 
         <div class="Temas">
-            <h3>Temas</h3>
+            <h2>Temas</h2>
+        </div>
+
+        <div class="Temas">
+            <h3>Display: Block</h3>
+            <p>Significa que o elemento é exibido como um bloco, assim como parágrafos e cabeçalhos sempre foram. O
+                elemento gera uma caixa de bloqueio, produzindo quebras de <br>linha antes e depois do elemento no fluxo
+                normal.
+            </p>
+
+            <div id="exemplo_display_block">
+                <p>Exemplo Display: Block</p>
+            </div>
+        </div>
+
+        <div class="Temas">
+            <h3>Display: inline</h3>
+            <p>Significa que o elemento é exibido em linha, dentro do bloco atual, na mesma linha.
+                O elemento gera uma ou mais caixas embutidas que não geram quebras de linha antes ou depois de si
+                mesmas.
+            </p>
+            <div id="exemplo_display_inline">
+                <p>Exemplo Display: Inline</p>
+                <p>Exemplo pt2</p>
+            </div>
+        </div>
+
+        <div class="Temas">
+            <h3>Display: inline-block</h3>
+            <p>Significa que os elementos fiquem lado a lado na mesma linha, mas podem ser configurados como uma imagem.
+                Um bloco inline é inserido em linha (ou seja, na mesma linha que o conteúdo adjacente), mas se comporta
+                como um bloco.
+            </p>
+            <div id="exemplo_display_inline_block">
+                <p>Exemplo Display: Inline_block</p>
+                <p>Exemplo pt2</p>
+            </div>
+        </div>
+
+        <div class="Temas">
+            <h3>display: flex</h3>
+            <p>Significa que os elementos dentro do flex podem ser alinhados.
+                Torna o elemento um flex container automaticamente transformando todos os seus “filhos” diretos em flex
+                itens.
+            </p>
+            <div id="exemplo_display_flex">
+                <p>Exemplo Display: flex</p>
+                <p>Exemplo pt2</p>
+            </div>
+        </div>
+
+        <div class="Temas">
+            <h3>Display: inline-flex</h3>
+            <p>Significa que o display: inline-flex não faz com que os itens flexíveis sejam exibidos em linha. Faz com
+                que o contêiner flexível seja exibido em linha.
+                Não há diferença visível no site.
+            </p>
+            <div id="exemplo_display_inline-flex">
+                <p>Exemplo Display: Inline-Flex</p>
+                <p>Exemplo pt2</p>
+            </div>
+        </div>
+
+        <div class="Temas">
+            <h3>Display: grid</h3>
+            <p>Grid é o ponto de partida para criar um grid container.
+                Ela transforma um elemento HTML em um contêiner de grade, onde você pode organizar os elementos filhos
+                em linhas e colunas.
+
+            </p>
+            <div id="exemplo_display_grid">
+                <p>Exemplo Display: Grid</p>
+                <p>Exemplo pt2</p>
+            </div>
+        </div>
+
+        <div class="Temas">
+            <h3>Display: inline-grid</h3>
+            <p>Faz com que o container se comporte como um elemento inline, ocupando apenas o espaço necessário e
+                permitindo outros elementos ao seu lado.
+            </p>
+            <div id="exemplo_display_inline-grid">
+                <p>Exemplo Display: Inline-grid</p>
+                <p>Exemplo pt2</p>
+            </div>
+        </div>
+
+
+        <div class="Temas">
+            <h3>Display: Flow-root</h3>
+            <p>Cria um novo contexto de formatação de bloco (BFC — Block Formatting Context). Isso faz com que o
+                elemento passe a gerenciar seu próprio fluxo de layout.
+                Um elemento com flow-root contém elementos com float, evitando que eles “escapem” do container. Também
+                impede o colapso de margens com elementos externos.
+            </p>
+            <div id="exemplo_display_flow-root">
+                <p>Exemplo Display: flow-root</p>
+                <p>Exemplo pt2</p>
+            </div>
+        </div>
+
+        <div class="Temas">
+            <h3>Display: Table</h3>
+            <p>Faz com que o elemento se comporte como uma tabela no layout do CSS, mesmo que não seja uma tag
+            <table>.
+                Permite organizar elementos em linhas e células, usando valores como table-row e table-cell.
+                O layout segue o algoritmo de tabela, ajustando automaticamente largura e alinhamento das células.
+
+                </p>
+                <div id="exemplo_display_table">
+                    <p>Exemplo Display: table</p>
+                    <p>Exemplo pt2</p>
+                </div>
         </div>
 
     </main>
