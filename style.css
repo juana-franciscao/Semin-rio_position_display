@@ -1,28 +1,47 @@
 body {
     margin: 0;
-    background-color: rgb(88, 125, 228);
+    background-color: rgb(117, 153, 255);
     text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 header {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    background-color: rgb(254, 253, 255);
+    background-color: rgb(152, 179, 255);
 }
 
 .pesquisa {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
+    
 }
+.conceito1{
 
-.conceito {
-    margin: 10px;
-    background-color: black;
-    color: white;
-    border: 5px solid white;
+     margin: 10px;
+    background-color: rgb(152, 179, 255);
+    color: rgb(255, 255, 255);
+    border: 10px rgb(255, 255, 255);
     text-align: center;
     border-radius: 10px;
+    width: 400px;
+    
+}
+
+
+
+.conceito {
+    display: flex;
+     margin: 10px;
+    background-color: rgb(152, 179, 255);
+    color: rgb(255, 255, 255);
+    border: 5px rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 10px;
+    width: 400px;
+    
 }
 
 .conceito_position{
@@ -62,4 +81,8 @@ header {
 
 #exemplo_display_inline p{
     display: inline;
+}
+
+.flex{
+    display: flex;
 }
