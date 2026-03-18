@@ -17,166 +17,110 @@
     <main>
         <div class="pesquisa">
             <div class="conceito">
-                
+
                 <p>No desenvolvimento web, o CSS é responsável por organizar e posicionar os elementos. As propriedades
                     display e position são fundamentais: a primeira define como os elementos aparecem no layout,
                     enquanto a segunda controla sua posição na página. Este trabalho busca explicar essas propriedades e
                     seu funcionamento na prática em HTML.
                 </p>
-                
+
             </div>
 
             <div class="conceito">
                 <p>
                     O CSS display é uma propriedade utilizada para organizar os elementos na página HTML. Ela pode
                     conter diferentes valores, entre eles o flex e o grid, que possibilitam a criação de layouts
-                    responsivos.
+                    responsivos.Alguns displays são: Display Inline, Display Block, Displau Inline-Block, Display Grid e
+                    Display Flex.
                 </p>
             </div>
         </div>
-
-        <div class="flex">
-        <div class="conceito">
-            <h3> Valores display: <h2>Inline</h2>
-            </h3>
-            <p>
-                Apresenta o elemento como conteúdo corrido, <br>
-                inserido organicamente junto ao texto ou outros elementos, <br>
-                ocupando apenas sua própria dimensão na tela, sem que propriedades <br>
-                como width ou height provocam qualquer efeito.
-
-            </p>
-
-
-        </div>
-
-        <div class="conceito">
-            <h3> Valores display: <h2>Block</h2>
-            </h3>
-            <p>
-                Apresenta o elemento como um bloco, inserido separadamente do conteúdo <br>
-                e ocupado (até que se altere) 100% do espaço disponível na tela.
-                None: não exibe o elemento na tela.
-            </p>
-
-
-        </div>
-
-        <div class="conceito">
-            <h3> Valores display: <h2>Inline-Block</h2>
-            </h3>
-            <p>
-                Apresenta o elemento como conteúdo corrido, inserido organicamente <br>
-                junto ao texto ou outros elementos, mas permite que propriedades como <br>
-                width ou height o modifiquem como se fosse um tipo block
-            </p>
-
-
-        </div>
-
-        <div class="conceito">
-            <h3> Valores display: <h2>Grid</h2>
-            </h3>
-            <p>
-                Apresenta o elemento como um contêiner de grid, <br>
-                tipologia disponível apenas no HTML5 e em alguns navegadores.
-            </p>
-
-
-        </div>
-
-        <div class="conceito">
-            <h3> Valores display: <h2>Flex</h2>
-            </h3>
-            <p>
-                Define o elemento como um contêiner flexível, <br> facilitando o alinhamento de itens filhos.
-
-            </p>
-        </div>
-</div>
 
         <div class="hr">
             <hr>
         </div>
         <div class="FLEX">
-        <div class="conceito_position">
-            <h3> Valores position: <h2>Static</h2>
-            </h3>
-            <p>
-                O valor padrão de position é static, que mantém o elemento <br>
-                no fluxo normal da página e não permite usar top, right, bottom ou <br>
-                left para posicionamento. Outros valores, como relative e fixed, permitem alterar a posição do elemento.
+            <div class="conceito_position">
+                <h3> Valores position: <h2>Static</h2>
+                </h3>
+                <p>
+                    O valor padrão de position é static, que mantém o elemento <br>
+                    no fluxo normal da página e não permite usar top, right, bottom ou <br>
+                    left para posicionamento. Outros valores, como relative e fixed, permitem alterar a posição do
+                    elemento.
 
-            </p>
-        </div>
+                </p>
+            </div>
 
-        <div class="conceito_position">
-            <h3> Valores position: <h2>Relative</h2>
-            </h3>
-            <p>
-                O valor relative significa "relativo". Um elemento <br>
-                com "position: relative" também é posicionado de acordo com o fluxo <br>
-                normal da página, mas agora podemos usar as propriedades top, right, bottom e left para <br>
-                ajustar sua posição relativa à sua posição original.
-                Exemplo:
-                .elemento
+            <div class="conceito_position">
+                <h3> Valores position: <h2>Relative</h2>
+                </h3>
+                <p>
+                    O valor relative significa "relativo". Um elemento <br>
+                    com "position: relative" também é posicionado de acordo com o fluxo <br>
+                    normal da página, mas agora podemos usar as propriedades top, right, bottom e left para <br>
+                    ajustar sua posição relativa à sua posição original.
+                    Exemplo:
+                    .elemento
 
-                <br>
-            <h4>Exemplo -> position: relative; <br>
-                top: 10px; /* Move o elemento 10 pixels para baixo */ <br>
-                left: 20px; /* Move o elemento 20 pixels para a direita */
-            </h4>
-
-
-            </p>
-        </div>
-
-        <div class="conceito_position">
-            <h3> Valores position: <h2>Absolute</h2>
-            </h3>
-            <p>
-                O absolute position é a ferramenta que remove o elemento do fluxo normal, <br>
-                não afeta e também não é afetada pela posição dos outros elementos. <br>
-                Diferente dos outros elementos no body, você pode posicionar qualquer elemento absoluto <br>
-                dentro de um elemento se o mesmo estiver definido como algo diferente de static (O elemento que é
-                posicionado conforme <br>
-                o fluxo normal do html). Para definir o posicionameto é possível utilizar top left, right e bottom.
+                    <br>
+                <h4>Exemplo -> position: relative; <br>
+                    top: 10px; /* Move o elemento 10 pixels para baixo */ <br>
+                    left: 20px; /* Move o elemento 20 pixels para a direita */
+                </h4>
 
 
-            </p>
-        </div>
+                </p>
+            </div>
 
-        <div class="conceito_position">
-            <h3> Valores position: <h2>Fixed</h2>
-            </h3>
-            <p>
-                O fixed position é, de maneira simples, elementos posicionados
-                em relação a área de visualização <br> ou a janela do navegador, ou seja, ao rolar
-                a página para baixo, os elementos fixos permanecem <br>fixos em suas posições.
-                Essa configuração de posição é frequentemente usada para navegações fixas. <br>
-                Vale salientar que, um elemento fixo se comporta de forma relativa ao fluxo do documento até atingir
-                <br>
-                uma posição de rolagem definida. Nesse ponto, ele passa a se comportar como um elemento fixo dentro de
-                seu elemento pai direto. <br>
-                Assim que o elemento fixo atinge a parte inferior do elemento pai, ele para de rolar.
+            <div class="conceito_position">
+                <h3> Valores position: <h2>Absolute</h2>
+                </h3>
+                <p>
+                    O absolute position é a ferramenta que remove o elemento do fluxo normal, <br>
+                    não afeta e também não é afetada pela posição dos outros elementos. <br>
+                    Diferente dos outros elementos no body, você pode posicionar qualquer elemento absoluto <br>
+                    dentro de um elemento se o mesmo estiver definido como algo diferente de static (O elemento que é
+                    posicionado conforme <br>
+                    o fluxo normal do html). Para definir o posicionameto é possível utilizar top left, right e bottom.
 
 
+                </p>
+            </div>
 
-            </p>
-        </div>
+            <div class="conceito_position">
+                <h3> Valores position: <h2>Fixed</h2>
+                </h3>
+                <p>
+                    O fixed position é, de maneira simples, elementos posicionados
+                    em relação a área de visualização <br> ou a janela do navegador, ou seja, ao rolar
+                    a página para baixo, os elementos fixos permanecem <br>fixos em suas posições.
+                    Essa configuração de posição é frequentemente usada para navegações fixas. <br>
+                    Vale salientar que, um elemento fixo se comporta de forma relativa ao fluxo do documento até atingir
+                    <br>
+                    uma posição de rolagem definida. Nesse ponto, ele passa a se comportar como um elemento fixo dentro
+                    de
+                    seu elemento pai direto. <br>
+                    Assim que o elemento fixo atinge a parte inferior do elemento pai, ele para de rolar.
 
-        <div class="conceito_position">
-            <h3> Valores position: <h2>Sticky</h2>
-            </h3>
-            <p>
-                Para falar do sticky position é preciso também falar do fixed e do relative, pois o sticky é a junção
-                dos dois elementos, <br>
-                ele funciona como um fixed, fixa alguma imagem,
-                texto ou elemento, porém, até um ponto em que o desenvolvedor usando o comando top: 0 estipula, <br>
-                o que torna o elemento fixo até o final do contêiner, travando quando atinge o ponto definido.
-                
-            </p>
-        </div>
+
+
+                </p>
+            </div>
+
+            <div class="conceito_position">
+                <h3> Valores position: <h2>Sticky</h2>
+                </h3>
+                <p>
+                    Para falar do sticky position é preciso também falar do fixed e do relative, pois o sticky é a
+                    junção
+                    dos dois elementos, <br>
+                    ele funciona como um fixed, fixa alguma imagem,
+                    texto ou elemento, porém, até um ponto em que o desenvolvedor usando o comando top: 0 estipula, <br>
+                    o que torna o elemento fixo até o final do contêiner, travando quando atinge o ponto definido.
+
+                </p>
+            </div>
         </div>
 
         <div class="hr"></div>
@@ -310,11 +254,7 @@
                 <p>Exemplo pt2</p>
             </div>
         </div>
-<<<<<<< HEAD
-        
-=======
-
-        <div class="Temas">
+        <<<<<<< HEAD=======<div class="Temas">
             <h3>Display: Block Flex</h3>
             <p>Você não pode usar display: inline flex dessa forma, pois o CSS interpreta inline e flex como valores
                 separados.
@@ -324,80 +264,82 @@
                 <p>Exemplo Display: Block Flex</p>
                 <p>Exemplo pt2</p>
             </div>
-        </div>
-
-        <div class="Temas">
-            <h3>Display: Block Grid</h3>
-            <p>
-            </p>
-            <div id="exemplo_display_block_grid">
-                <p>Exemplo Display: Block Grid</p>
-                <p>Exemplo pt2</p>
             </div>
-        </div>
 
-        <div class="Temas">
-            <h3>Display: Block Flow-root</h3>
-            <p>A declaração display: block flow-root a sintaxe moderna de dois valores para a palavra-chave de valor
-                único display: flow-root. Ambas alcançam o mesmo resultado:Criando um elemento de nível de bloco que
-                estabelece um novo Contexto de Formatação de Bloco (BFC) para seu conteúdo.
-            </p>
-            <div id="exemplo_display_block_flow-root">
-                <p>Exemplo Display: Block Flow-root</p>
-                <p>Exemplo pt2</p>
+            <div class="Temas">
+                <h3>Display: Block Grid</h3>
+                <p>
+                </p>
+                <div id="exemplo_display_block_grid">
+                    <p>Exemplo Display: Block Grid</p>
+                    <p>Exemplo pt2</p>
+                </div>
             </div>
-        </div>
 
-        <div class="Temas">
-            <h3>Display: Inline Flow</h3>
-            <p>Esse valor não existe no CSS como display.
-                Flow faz parte do modelo interno do CSS, mas não pode ser usado assim.
-
-            </p>
-            <div id="exemplo_display_inline_flow">
-                <p>Exemplo Display: Inline Flow</p>
-                <p>Exemplo pt2</p>
+            <div class="Temas">
+                <h3>Display: Block Flow-root</h3>
+                <p>A declaração display: block flow-root a sintaxe moderna de dois valores para a palavra-chave de valor
+                    único display: flow-root. Ambas alcançam o mesmo resultado:Criando um elemento de nível de bloco que
+                    estabelece um novo Contexto de Formatação de Bloco (BFC) para seu conteúdo.
+                </p>
+                <div id="exemplo_display_block_flow-root">
+                    <p>Exemplo Display: Block Flow-root</p>
+                    <p>Exemplo pt2</p>
+                </div>
             </div>
-        </div>
 
-        <div class="Temas">
-            <h3>Display: Inline Flex</h3>
-            <p>Você não pode usar display: inline flex dessa forma, pois o CSS interpreta inline e flex como valores
-                separados.
-                O valor correto definido na especificação é inline-flex, que representa um único tipo de display.
-            </p>
-            <div id="exemplo_display_inline_flex">
-                <p>Exemplo Display: Inline Flex</p>
-                <p>Exemplo pt2</p>
+            <div class="Temas">
+                <h3>Display: Inline Flow</h3>
+                <p>Esse valor não existe no CSS como display.
+                    Flow faz parte do modelo interno do CSS, mas não pode ser usado assim.
+
+                </p>
+                <div id="exemplo_display_inline_flow">
+                    <p>Exemplo Display: Inline Flow</p>
+                    <p>Exemplo pt2</p>
+                </div>
             </div>
-        </div>
 
-        <div class="Temas">
-            <h3>Display: Inline Grid</h3>
-            <p>Você não pode usar display: inline grid na mesma declaração, pois inline e grid são interpretados como
-                dois valores independentes.
-                A especificação do CSS define inline-grid como um único valor válido.
-            </p>
-            <div id="exemplo_display_inline_grid">
-                <p>Exemplo Display: Inline Grid</p>
-                <p>Exemplo pt2</p>
+            <div class="Temas">
+                <h3>Display: Inline Flex</h3>
+                <p>Você não pode usar display: inline flex dessa forma, pois o CSS interpreta inline e flex como valores
+                    separados.
+                    O valor correto definido na especificação é inline-flex, que representa um único tipo de display.
+                </p>
+                <div id="exemplo_display_inline_flex">
+                    <p>Exemplo Display: Inline Flex</p>
+                    <p>Exemplo pt2</p>
+                </div>
             </div>
-        </div>
 
-        <div class="Temas">
-            <h3>Display: Inline Flow-root</h3>
-            <p>Você não pode usar display: inline flow, pois flow não é um valor válido para ser combinado com inline
-                na propriedade display.
-                Flow representa o fluxo normal de layout no CSS, mas não foi definido como um valor utilizável dessa
-                forma dentro do display.
-
-            </p>
-            <div id="exemplo_display_inline_flow-root">
-                <p>Exemplo Display: Inline Flow-root</p>
-                <p>Exemplo pt2</p>
+            <div class="Temas">
+                <h3>Display: Inline Grid</h3>
+                <p>Você não pode usar display: inline grid na mesma declaração, pois inline e grid são interpretados
+                    como
+                    dois valores independentes.
+                    A especificação do CSS define inline-grid como um único valor válido.
+                </p>
+                <div id="exemplo_display_inline_grid">
+                    <p>Exemplo Display: Inline Grid</p>
+                    <p>Exemplo pt2</p>
+                </div>
             </div>
-        </div>
->>>>>>> 35d88d430fef1bcbd23e846c8dfb1b9b4f413f12
+
+            <div class="Temas">
+                <h3>Display: Inline Flow-root</h3>
+                <p>Você não pode usar display: inline flow, pois flow não é um valor válido para ser combinado com
+                    inline
+                    na propriedade display.
+                    Flow representa o fluxo normal de layout no CSS, mas não foi definido como um valor utilizável dessa
+                    forma dentro do display.
+
+                </p>
+                <div id="exemplo_display_inline_flow-root">
+                    <p>Exemplo Display: Inline Flow-root</p>
+                    <p>Exemplo pt2</p>
+                </div>
+            </div>
+            >>>>>>> 35d88d430fef1bcbd23e846c8dfb1b9b4f413f12
 
     </main>
 </body>
