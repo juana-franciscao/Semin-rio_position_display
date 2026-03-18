@@ -1,28 +1,47 @@
 body {
     margin: 0;
-    background-color: rgb(88, 125, 228);
+    background-color: rgb(117, 153, 255);
     text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 header {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    background-color: rgb(254, 253, 255);
+    background-color: rgb(152, 179, 255);
 }
 
 .pesquisa {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
+    
 }
+.conceito1{
 
-.conceito {
-    margin: 10px;
-    background-color: black;
-    color: white;
-    border: 5px solid white;
+     margin: 10px;
+    background-color: rgb(152, 179, 255);
+    color: rgb(255, 255, 255);
+    border: 10px rgb(255, 255, 255);
     text-align: center;
     border-radius: 10px;
+    width: 400px;
+    
+}
+
+
+
+.conceito {
+    display: flex;
+     margin: 10px;
+    background-color: rgb(152, 179, 255);
+    color: rgb(255, 255, 255);
+    border: 5px rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 10px;
+    width: 400px;
+    
 }
 
 .conceito_position {
@@ -55,15 +74,19 @@ header {
 /*Temas - Parte das Garotas*/
 /*Deixei um de exemplo, não tenho certeza se esta certo... ass: rafa*/
 
-#exemplo_display_block p {
+#exemplo_display_block  {
     display: block;
 }
 
-#exemplo_display_inline p {
+#exemplo_display_inline  {
     display: inline;
 }
 
-#exemplo_display_inline_block p {
+ HEAD
+.flex{
+    display: flex;
+}
+#exemplo_display_inline_block  {
     display: inline block;
 }
 
@@ -121,4 +144,10 @@ header {
 
 #exemplo_display_inline_flow-root p {
     display: inline flow-root;
+<<<<<<< HEAD
 }
+=======
+}
+
+
+>>>>>>> d33d6493f2a8920a948b3fc6517aab884f483efe
