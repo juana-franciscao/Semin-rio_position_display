@@ -5,20 +5,28 @@ body {
     color: rgb(255, 255, 255);
 }
 
+
+
+
+
+
 header {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    background-color: rgb(152, 179, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(152, 179, 255);;
 }
+
 
 .pesquisa {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
-    
+   
+   
 }
 .conceito1{
+
 
      margin: 10px;
     background-color: rgb(152, 179, 255);
@@ -27,41 +35,64 @@ header {
     text-align: center;
     border-radius: 10px;
     width: 400px;
-    
+   
 }
+
+
+
 
 
 
 .conceito {
-    display: flex;
-     margin: 10px;
-    background-color: rgb(152, 179, 255);
-    color: rgb(255, 255, 255);
-    border: 5px rgb(255, 255, 255);
-    text-align: center;
-    border-radius: 10px;
-    width: 400px;
     
+     margin: 10px;
+    background-color:  rgb(152, 179, 255);
+    color: white;
+    border: 5px solid white;
+    text-align: center;         
+    border-radius: 10px;
+   
 }
+
 
 .conceito_position {
     margin: 10px;
-    background-color: rgb(131, 12, 12);
+    background-color: rgb(158, 116, 206);
     color: white;
     border: 5px solid white;
     text-align: center;
     border-radius: 10px;
+    width: 400px;
+   
+
 
 }
 
-.Temas {
-    margin: 10px;
-    background-color: rgb(95, 86, 73);
+
+.Temas2 {
+   
+     margin: 0px;
+    background-color: rgb(226, 168, 202);
     color: white;
     border: 5px solid white;
     text-align: center;
-    border-radius: 10px
+    border-radius: 10px;
+   
 }
+
+
+.Temas {
+   
+     margin: 10px;
+    background-color: rgb(226, 168, 202);
+    color: white;
+    border: 5px solid white;
+    text-align: center;
+    border-radius: 10px;
+    width: 400px;
+}
+
+
 
 
 .hr {
@@ -71,77 +102,106 @@ header {
 }
 
 
+.flex{
+    display: flex;
+   
+}
+
+
+.tam{
+    height: 50px;
+}
+
+
 /*Temas - Parte das Garotas*/
 /*Deixei um de exemplo, não tenho certeza se esta certo... ass: rafa*/
+
 
 #exemplo_display_block  {
     display: block;
 }
 
+
 #exemplo_display_inline  {
     display: inline;
 }
 
- HEAD
-.flex{
-    display: flex;
-}
-#exemplo_display_inline_block  {
+
+ 
+
+
+#exemplo_display_inline_block p {
     display: inline block;
 }
+
 
 #exemplo_display_flex p {
     display: flex;
 }
 
+
 #exemplo_display_inline-flex p {
     display: inline-flex;
 }
+
 
 #exemplo_display_grid p {
     display: grid;
 }
 
+
 #exemplo_display_inline-grid p {
     display: inline-grid;
 }
+
 
 #exemplo_display_flow-root p {
     display: flow-root;
 }
 
+
 #exemplo_display_table p {
     display: table;
 }
+
 
 #exemplo_display_block_flow p {
     display: block flow;
 }
 
+
 #exemplo_display_block_flex p {
     display: block flex;
 }
+
 
 #exemplo_display_block_grid p {
     display: block grid;
 }
 
+
 #exemplo_display_block_flow-root p {
     display: block flow-root;
 }
+
 
 #exemplo_display_inline_flow p {
     display: inline flow;
 }
 
+
 #exemplo_display_inline_flex p {
     display: inline flex;
 }
+
 
 #exemplo_display_inline_grid p {
     display: inline grid;
 }
 
+
 #exemplo_display_inline_flow-root p {
     display: inline flow-root;
+
+
 }
